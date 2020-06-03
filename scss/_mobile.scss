@@ -1,9 +1,15 @@
 //widescreen
 @include mediaXl {
+  .project-div {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 //desktop & laptops
 @include mediaLg {
+  .project-div {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 //tablets & small laptops
@@ -18,7 +24,7 @@
     .lg-heading {
       line-height: 1;
       margin-bottom: 1rem;
-      font-size: 4rem !important;
+      font-size: 3rem !important;
     }
   }
 
@@ -61,6 +67,9 @@
       'career3';
     grid-template-columns: 1fr;
   }
+  .project-div {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 //smartphones
@@ -74,9 +83,7 @@
     margin-top: 10vh;
   }
 
-  .lg-heading {
-    line-height: 1;
-    margin-bottom: 1rem;
-    font-size: 3rem !important;
+  .project-div {
+    grid-template-columns: 1fr;
   }
 }
