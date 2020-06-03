@@ -10,6 +10,13 @@ const menuNav = querySelector('.menu-nav');
 const menuBranding = querySelector('.menu-branding');
 const navItems = document.querySelectorAll('.nav-item');
 
+function footerDate() {
+  const dateCopyright = querySelector('#dateCopyright');
+  let year = new Date();
+  year = year.getFullYear();
+  dateCopyright.innerText = year;
+}
+
 //set initial state of menu
 let showMenu = false;
 

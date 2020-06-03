@@ -51,6 +51,19 @@
       border: solid 3px $secondary-color;
     }
   }
+
+  .about-info {
+    grid-template-areas:
+      'bio-image'
+      'bio'
+      'career1'
+      'career2'
+      'career3';
+    grid-template-columns: 1fr;
+
+    .bio-image {
+    }
+  }
 }
 
 //smartphones
