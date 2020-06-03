@@ -54,15 +54,12 @@
 
   .about-info {
     grid-template-areas:
-      'bio-image'
+      'bioimage'
       'bio'
       'career1'
       'career2'
       'career3';
     grid-template-columns: 1fr;
-
-    .bio-image {
-    }
   }
 }
 

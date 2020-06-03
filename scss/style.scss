@@ -80,12 +80,13 @@ main {
   row-gap: 1.5rem;
   column-gap: 1.5rem;
   grid-template-areas:
-    'bio-image bio bio'
+    'bioimage bio bio'
     'career1 career2 career3';
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
-    grid-area: bio-image;
+    grid-area: bioimage;
+    margin: auto;
     border-radius: 50%;
     border: 3px solid $secondary-color;
   }
