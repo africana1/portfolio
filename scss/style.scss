@@ -292,4 +292,10 @@ main {
   }
 }
 
+#client-list {
+  a:hover {
+    color: lighten(crimson, 20);
+  }
+}
+
 @import 'mobile';

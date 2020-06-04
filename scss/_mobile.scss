@@ -70,6 +70,11 @@
   .project-div {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .tech-stack,
+  #client-list {
+    list-style: none;
+  }
 }
 
 //smartphones
@@ -85,5 +90,11 @@
 
   .project-div {
     grid-template-columns: 1fr;
+  }
+
+  .tech-stack,
+  #client-list {
+    list-style: none;
+    text-decoration: none;
   }
 }

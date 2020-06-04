@@ -504,6 +504,10 @@ main#home h1 {
   border-bottom: solid 1px #ad102f;
 }
 
+#client-list a:hover {
+  color: #f16581;
+}
+
 @media screen and (min-width: 1171px) {
   .project-div {
     -ms-grid-columns: (1fr)[4];
@@ -571,6 +575,10 @@ main#home h1 {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
+  .tech-stack,
+  #client-list {
+    list-style: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -586,6 +594,11 @@ main#home h1 {
   .project-div {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .tech-stack,
+  #client-list {
+    list-style: none;
+    text-decoration: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
