@@ -165,6 +165,28 @@
           transition-delay: 0.4s;
 }
 
+/* yatra-one-regular - latin */
+@font-face {
+  font-family: 'Yatra One';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/yatra-one-v5-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("../Yatra One Regular"), local("YatraOne-Regular"), url("../fonts/yatra-one-v5-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/yatra-one-v5-latin-regular.woff2") format("woff2"), url("../fonts/yatra-one-v5-latin-regular.woff") format("woff"), url("../fonts/yatra-one-v5-latin-regular.ttf") format("truetype"), url("../fonts/yatra-one-v5-latin-regular.svg#YatraOne") format("svg");
+  /* Legacy iOS */
+}
+
+/* pt-serif-regular - latin */
+@font-face {
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pt-serif-v11-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("PT Serif"), local("PTSerif-Regular"), url("../fonts/pt-serif-v11-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/pt-serif-v11-latin-regular.woff2") format("woff2"), url("../fonts/pt-serif-v11-latin-regular.woff") format("woff"), url("../fonts/pt-serif-v11-latin-regular.ttf") format("truetype"), url("../fonts/pt-serif-v11-latin-regular.svg#PTSerif") format("svg");
+  /* Legacy iOS */
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -175,7 +197,7 @@ body {
   color: #e0e0e0;
   height: 100vh;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'PT Serif';
   line-height: 1.5;
 }
 
@@ -206,12 +228,17 @@ h3 {
 h1.lg-heading,
 h2.lg-heading,
 h3.lg-heading {
+  font-family: 'Yatra One';
+  font-weight: 500;
   font-size: 5rem;
 }
 
 h1.sm-heading,
 h2.sm-heading,
 h3.sm-heading {
+  font-family: 'PT Serif';
+  font-weight: 500;
+  font-size: 1.6rem;
   margin-bottom: 2rem;
   padding: 0.2rem 1rem;
   background: rgba(47, 54, 56, 0.4);
@@ -258,6 +285,37 @@ main#home {
 
 main#home h1 {
   margin-top: 20vh;
+}
+
+#tooltip, #tooltipLinkedIn, #tooltipGitHub, #tooltipAbout {
+  position: relative;
+}
+
+#tooltip:hover::after, #tooltipLinkedIn:hover::after, #tooltipGitHub:hover::after, #tooltipAbout:hover::after {
+  position: absolute;
+  top: -2.4rem;
+  left: 2rem;
+  min-width: 130px;
+  border: 1px solid #2a3132;
+  padding: 8px;
+  border-radius: 3px;
+  color: #fafafa;
+  background-color: #2a3132;
+  z-index: 1;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+#tooltipLinkedIn:hover::after {
+  content: 'LinkedIn Profile';
+}
+
+#tooltipGitHub:hover::after {
+  content: 'GutHub Repos';
+}
+
+#tooltipAbout:hover::after {
+  content: 'About.me Profile';
 }
 
 .about-info {
@@ -338,6 +396,38 @@ main#home h1 {
   transition: all 0.5s ease-out;
 }
 
+.boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+}
+
+.boxes div {
+  font-size: 1.5rem;
+  border: 1.5px solid #ed365b;
+  border-radius: 6px;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 1.5rem;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.boxes div:hover {
+  display: block;
+  padding: 0.5rem 1.5rem;
+  background: #004d4d;
+  color: #fafafa;
+}
+
 .btn, .btn-light, .btn-dark {
   display: block;
   padding: 0.5rem 1rem;
@@ -380,6 +470,8 @@ main#home h1 {
   background: #131616;
   color: #e0e0e0;
   height: 3.7rem;
+  font-family: 'yatra one';
+  font-size: 1.2rem;
 }
 
 @media screen and (min-width: 1171px) {

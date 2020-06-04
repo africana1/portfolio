@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="img/password.ico" type="image/x-icon" />
-    <title>africana | Home</title>
+    <title>africana | Contact</title>
   </head>
-  <body id="bg-img">
+  <body>
     <div class="overlay"></div>
     <header>
       <div class="btn-menu">
@@ -24,7 +24,7 @@
           </div>
         </div>
         <ul class="menu-nav">
-          <li class="nav-item current">
+          <li class="nav-item">
             <a href="index.html" class="nav-link">Home</a>
           </li>
 
@@ -36,29 +36,47 @@
             <a href="projects.html" class="nav-link">My Projects</a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item current">
             <a href="contact.html" class="nav-link">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main id="home">
-      <h1 class="lg-heading">Adebambo <span class="text-secondary">Tunde</span></h1>
-      <h2 class="sm-heading">Programmer, Fullstack Developer &amp; Blockchain</h2>
-      <div class="icons">
-        <a href="https://www.linkedin.com/in/adebambo-tunde-951192123/" target="_blank" id="tooltipLinkedIn"
-          ><i class="fab fa-linkedin fa-2x"></i
-        ></a>
-        <a href="https://github.com/africana1" target="_blank" id="tooltipGitHub"
-          ><i class="fab fa-github fa-2x"></i
-        ></a>
-        <a href="https://about.me/africana" target="_blank" id="tooltipAbout"
-          ><i class="fas fa-at fa-2x"></i
-        ></a>
+    <main id="contact">
+      <h1 class="lg-heading">Contact <span class="text-secondary">Me</span></h1>
+      <h2 class="sm-heading">Quick Links</h2>
+
+      <div class="boxes">
+        <div>
+          <i class="fas fa-envelope"></i>
+          <span class="text-secondary">Email:</span>
+          africana@protonmail.com
+        </div>
+
+        <div>
+          <i class="fas fa-phone"></i>
+          <span class="text-secondary">Phone:</span>
+          +234-802-766-8499
+        </div>
+
+        <div>
+          <i class="fas fa-home"></i>
+          <span class="text-secondary">Address:</span>
+          5th Norlfalk Avenue Bratislavia
+        </div>
       </div>
     </main>
 
+    <footer id="main-footer">
+      Quimby africana
+      <i class="fas fa-copyright"></i>
+      <span id="dateCopyright"></span>
+    </footer>
+
     <script src="js/index.js"></script>
+    <script>
+      footerDate();
+    </script>
   </body>
 </html>
