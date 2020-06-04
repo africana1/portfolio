@@ -3,7 +3,7 @@ $secondary-color: #eece1a;
 $functional-color: #e0e0e0;
 $show-home-image: true;
 $home-image: url('../img/background-image.jpeg');
-$background-opacity: 0.85;
+$background-opacity: 0.9;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
@@ -25,7 +25,7 @@ $background-opacity: 0.85;
         position: absolute;
         top: 0;
         right: 0;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         z-index: -2;
         background: rgba($primary-color, $background-opacity);
