@@ -334,7 +334,7 @@ main#home h1 {
   row-gap: 1.5rem;
   -webkit-column-gap: 1.5rem;
           column-gap: 1.5rem;
-      grid-template-areas: 'bioimage bio bio' 'career1 career2 career3';
+      grid-template-areas: 'bioimage bio bio' 'career1 career2 career3' 'favorite favorite favorite';
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
 }
@@ -374,7 +374,15 @@ main#home h1 {
   grid-area: career3;
 }
 
-.about-info .career {
+.about-info .favorite {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: favorite;
+}
+
+.about-info .career,
+.about-info .favorite {
   background: #1e2324;
   padding: 0.7rem;
   border-bottom: 1px solid #eece1a;
@@ -383,7 +391,8 @@ main#home h1 {
   transition: all 0.5s ease-out;
 }
 
-.about-info .career:hover {
+.about-info .career:hover,
+.about-info .favorite:hover {
   -webkit-box-shadow: 1px 2px 4px #ed365b;
           box-shadow: 1px 2px 4px #ed365b;
 }
@@ -567,7 +576,7 @@ main#home h1 {
     border: solid 3px #eece1a;
   }
   .about-info {
-        grid-template-areas: 'bioimage' 'bio' 'career1' 'career2' 'career3';
+        grid-template-areas: 'bioimage' 'bio' 'career1' 'career2' 'career3' 'favorite';
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }

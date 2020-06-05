@@ -141,7 +141,8 @@ main {
   column-gap: 1.5rem;
   grid-template-areas:
     'bioimage bio bio'
-    'career1 career2 career3';
+    'career1 career2 career3'
+    'favorite favorite favorite';
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
@@ -168,7 +169,12 @@ main {
     grid-area: career3;
   }
 
-  .career {
+  .favorite {
+    grid-area: favorite;
+  }
+
+  .career,
+  .favorite {
     background: darken($primary-color, 5);
     padding: 0.7rem;
     border-bottom: 1px solid $secondary-color;
