@@ -4,7 +4,8 @@
   "description": "My Portfolio Website",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "Programmer",
@@ -14,6 +15,7 @@
   "author": "Quimby africana",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^3.0.0",
     "node-sass": "^4.14.1"
   }
 }
