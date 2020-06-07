@@ -321,7 +321,7 @@ main#home h1 {
 }
 
 #tooltipGitHub:hover::after {
-  content: 'GutHub Repos';
+  content: 'GitHub Repos';
 }
 
 #tooltipAbout:hover::after {
