@@ -121,7 +121,7 @@ main {
   @extend #tooltip;
 
   &:hover::after {
-    content: 'GutHub Repos';
+    content: 'GitHub Repos';
   }
 }
 
