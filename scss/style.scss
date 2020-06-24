@@ -109,6 +109,14 @@ main {
   }
 }
 
+#tooltipTwitter {
+  @extend #tooltip;
+
+  &:hover::after {
+    content: '@twitter handle';
+  }
+}
+
 #tooltipLinkedIn {
   @extend #tooltip;
 
