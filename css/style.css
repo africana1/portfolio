@@ -297,11 +297,11 @@ main#home h1 {
   margin-top: 20vh;
 }
 
-#tooltip, #tooltipLinkedIn, #tooltipGitHub, #tooltipAbout {
+#tooltip, #tooltipTwitter, #tooltipLinkedIn, #tooltipGitHub, #tooltipAbout {
   position: relative;
 }
 
-#tooltip:hover::after, #tooltipLinkedIn:hover::after, #tooltipGitHub:hover::after, #tooltipAbout:hover::after {
+#tooltip:hover::after, #tooltipTwitter:hover::after, #tooltipLinkedIn:hover::after, #tooltipGitHub:hover::after, #tooltipAbout:hover::after {
   position: absolute;
   top: -2.4rem;
   left: 2rem;
@@ -314,6 +314,10 @@ main#home h1 {
   z-index: 1;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+}
+
+#tooltipTwitter:hover::after {
+  content: '@twitter handle';
 }
 
 #tooltipLinkedIn:hover::after {
